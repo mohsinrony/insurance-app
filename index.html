@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Insurance Application Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Insurance Application Form</h1>
+      <form id="insuranceForm">
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          placeholder="Enter your name"
+          required
+        /><br /><br />
+
+        <label for="age">Age:</label>
+        <input
+          type="number"
+          id="age"
+          placeholder="Enter your age"
+          required
+        /><br /><br />
+
+        <label>Current Health:</label>
+        <div class="checkbox-group">
+          <label
+            ><input type="checkbox" class="health" value="Hypertension" />
+            Hypertension</label
+          >
+          <label
+            ><input type="checkbox" class="health" value="High Blood Sugar" />
+            High Blood Sugar</label
+          >
+          <label
+            ><input type="checkbox" class="health" value="Overweight" />
+            Overweight</label
+          >
+        </div>
+        <br />
+
+        <label>Habits:</label>
+        <div class="checkbox-group">
+          <label
+            ><input type="checkbox" class="habits" value="Regular Exercise" />
+            Regular Exercise</label
+          >
+          <label
+            ><input type="checkbox" class="habits" value="Healthy Diet" />
+            Healthy Diet</label
+          >
+          <label
+            ><input type="checkbox" class="habits" value="Adequate Sleep" />
+            Adequate Sleep</label
+          >
+          <label
+            ><input type="checkbox" class="habits" value="Stress Management" />
+            Stress Management</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              class="habits"
+              value="Moderate Alcohol Consumption"
+            />
+            Moderate Alcohol Consumption</label
+          >
+          <label
+            ><input type="checkbox" class="habits" value="Non-Smoking" />
+            Non-Smoking</label
+          >
+          <label
+            ><input type="checkbox" class="habits" value="Smoking" />
+            Smoking</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              class="habits"
+              value="Excessive Alcohol Consumption"
+            />
+            Excessive Alcohol Consumption</label
+          >
+          <label
+            ><input type="checkbox" class="habits" value="Lack of Exercise" />
+            Lack of Exercise</label
+          >
+          <label
+            ><input type="checkbox" class="habits" value="Poor Diet" /> Poor
+            Diet</label
+          >
+          <label
+            ><input type="checkbox" class="habits" value="Inadequate Sleep" />
+            Inadequate Sleep</label
+          >
+          <label
+            ><input type="checkbox" class="habits" value="Drug Use" /> Drug
+            Use</label
+          >
+        </div>
+        <br />
+
+        <button type="button" onclick="calculateRiskScore()">
+          Calculate Risk Score
+        </button>
+
+        <p class="result" id="result"></p>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
